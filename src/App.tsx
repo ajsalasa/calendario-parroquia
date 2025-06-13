@@ -2,12 +2,11 @@
 // ------------------------------------------------------
 // Responsive, static calendar list UI for church courses
 // ------------------------------------------------------
-// 🔑 1. Importa el CSS que contiene las directivas de Tailwind (@tailwind).
+// 🔑 1. Los estilos globales se importan en `main.tsx` con `./index.css`.
 // 🔑 2. Si el plugin PostCSS de Tailwind no está activo (=> las clases no existen),
 //        cargamos dinámicamente el CSS compilado desde un CDN para que la UI
 //        nunca quede sin estilos, por muy roto que esté tu build local.
 // ------------------------------------------------------
-import "./index.css"; // <-- Debe contener @tailwind base/components/utilities
 import { useEffect, useState } from "react";
 
 /**
